@@ -28,10 +28,10 @@ cp target/servicemix-osgi-demo.jar ../deploy/
 docker exec -t -i servicemix /opt/servicemix/bin/client
 
 ##Install and start the bundle: 
-- osgi:install file:///deploy/servicemix-osgi-demo.jar
-- osgi:start <the ID of the bundle>
+- bundle:install file:///deploy/servicemix-osgi-demo.jar
+- bundle:start <the ID of the bundle>
 
 ## Obtain information about the route
-route-list
-route-info <the ID of the route>
-log:tail
+- route-list
+- route-info <the ID of the route>
+- log:tail
